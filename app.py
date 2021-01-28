@@ -134,7 +134,7 @@ def addRealItem():
     }
 
     add_by_id(**item)
-    file.save(os.path.join( os.getcwd(), 'online_shopping_site/static/', file.filename))
+    file.save(os.path.join( os.getcwd(), 'static', file.filename))
 
 
 
