@@ -1,11 +1,12 @@
 from flask import Flask, request, render_template, abort, redirect, session
 from fake_db import get_all, get_by_id, login as lgn, remove_one, add_by_id
-from dotenv import load_dotenv
 import requests
 import datetime
 import logging
 import os
 from utils import retry
+
+
 app = Flask(__name__)
 app.config['SECRET_KEY'] = "somethingyoudontwannaseeissupposedtobehereLOL"
 
