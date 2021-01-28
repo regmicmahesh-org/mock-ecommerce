@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content-center">
+      <div class="section">
+        <form method="POST">
+          <h1>Admin Login!</h1>
+          {%if errors %} 
+          {%for err in errors %}
+          <p style="color: red">Error: {{ err }}</p>
+          {%endfor%}
+          {% endif %}
+          <p>
+            <label for="username">Username: </label>
+            <input type="username" name="username" />
+          </p>
+          <p>
+            <label for="password"> Password: </label>
+            <input type="password" name="password" />
+          </p>
+          <input type="submit" value="Login" style="float: right" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

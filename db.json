@@ -1,0 +1,28 @@
+{
+    "items": [
+        {
+            "id": 1,
+            "item_name": "T-Shirt",
+            "price": 3000,
+            "image": "tshirt.jpg"
+        },
+        {
+            "id": 2,
+            "item_name": "Pant",
+            "price": 5000,
+            "image": "pant.jpg"
+        },
+        {
+            "id": 3,
+            "item_name": "Laptop",
+            "price": 90000,
+            "image": "laptop.jpg"
+        }
+    ],
+    "users" : [
+        {
+            "username" : "asdf",
+            "password" : "asdf"
+        }
+    ]
+}
