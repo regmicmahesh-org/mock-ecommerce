@@ -7,26 +7,20 @@
     <title>Document</title>
   </head>
   <body>
-
     <div class="content-center">
-    <div class="section">
-      <div>
+      <div class="section">
+        <div class="">
           <h1>Order Now!</h1>
-        <label for="number">Phone Number: </label>
-        <input type="hidden" id="name" value="{{ item['item_name'] }}">
-        <input type="hidden" id="price" value="{{ item['price'] }}">
-        <input type="number" name="number" id="number">
-        <button id="orderButton">Order</button>
-      </div>
+          <input type="number" id="number" placeholder="Phone Number" />
+          <button id="orderButton">Order</button>
+        </div>
 
-      <img
-        class="big-image"
-        src=" {{ url_for('static', filename=item['image']) }}"
-        height="200"
-      />
-      <h1 id="status"></h1>
+        <img class="big-image" id="itemThumbnail" height="200">
+
+        <h1 id="status"></h1>
       </div>
     </div>
-    <script src="/static/js/app.js"></script>
+    <script src="/static/js/orderHandler.js"></script>
+    <script src="/static/js/details-loader.js"></script>
   </body>
 </html>
