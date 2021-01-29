@@ -1,4 +1,4 @@
-const URL = "http://localhost:8000/order";
+const ORDER_URL = "http://localhost:9000/order";
 let counter = 0;
 
 async function buttonHandler() {
@@ -9,7 +9,7 @@ async function buttonHandler() {
   const elem = document.getElementById("status");
 
   try {
-    const resp = await fetch(URL, {
+    const resp = await fetch(ORDER_URL, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

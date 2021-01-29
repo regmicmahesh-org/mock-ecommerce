@@ -1,3 +1,5 @@
+const ITEM_LIST_API = "http://localhost:9001/all"
+
 const section = document.querySelector(".section")
 
 function insertInDom(el){
@@ -17,8 +19,10 @@ function insertInDom(el){
         headingTwo.textContent = `Price: ${el.price}`
 
         const linkToDetails = document.createElement("a")
-        linkToDetails.href = `/buy/${el.id}`
+        linkToDetails.href = `/item.html#${el.id}`
         linkToDetails.textContent = "Buy"
+
+
         div.appendChild(img)
         div.appendChild(headingOne)
         div.appendChild(headingTwo)
@@ -34,7 +38,7 @@ async function loadItems(count){
 
     try{
 
-    const data = await fetch("http://localhost:9090/all")
+    const data = await fetch(ITEM_LIST_API)
     const jsonData = await data.json()
     section.innerHTML = ""
 
